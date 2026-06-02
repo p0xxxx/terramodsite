@@ -207,18 +207,30 @@
 
         <div class="card">
             <h3>👨‍💻 Creator</h3>
-            <p>
-                TerraMod was created by Poxx with the goal of transforming
-                Minecraft world generation into a more immersive and breathtaking experience.
-            </p>
-        </div>
+           <div class="card">
+    <h3>👨‍💻 Creator</h3>
 
-        <div class="card">
-            <h3>📩 Contact</h3>
-            <p>
-                Discord: Coming Soon<br>
-                GitHub: github.com/p0xxxx/terramod
-            </p>
+    <p>
+        TerraMod was created by Poxx with the goal of transforming
+        Minecraft world generation into a more immersive and
+        breathtaking experience.
+    </p>
+
+    <br>
+
+    <p>
+        Focused on massive mountains, floating islands,
+        beautiful valleys and endless exploration.
+    </p>
+
+    <br>
+
+    <a href="https://github.com/p0xxxx/terramod"
+       target="_blank"
+       class="btn">
+       View Source
+    </a>
+</div>
      <div class="card">
     <h3>⚡ Quick Install</h3>
 
@@ -276,10 +288,18 @@ function copyCommand() {
     "powershell -Command \"Invoke-WebRequest 'https://raw.githubusercontent.com/p0xxxx/terramod/main/TerraMod-fabric-1.0.0.jar' -OutFile '$env:USERPROFILE\\.lunarclient\\profiles\\lunar\\1.21\\mods\\fabric-1.21.11\\TerraMod-fabric-1.0.0.jar'\""
   );
 
-  alert("Install command copied to clipboard!");
+  const button = event.target;
+  const oldText = button.innerText;
+
+  button.innerText = "✓ Copied!";
+  button.disabled = true;
+
+  setTimeout(() => {
+    button.innerText = oldText;
+    button.disabled = false;
+  }, 2000);
 }
 </script>
-
 </body>
 </html>
 </html>
