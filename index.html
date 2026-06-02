@@ -219,21 +219,25 @@
                 Discord: Coming Soon<br>
                 GitHub: github.com/p0xxxx/terramod
             </p>
-        </div>
+     <div class="card">
+    <h3>⚡ Quick Install</h3>
 
-        <div class="card">
-            <h3>🎥 Installation Guide</h3>
-            <p>
-                Learn how to install TerraMod in just a few minutes.
-            </p>
+    <p>
+        Copy the installation command and run it in CMD.
+    </p>
 
-            <a href="https://youtu.be/HHKrT1E12FU"
-               target="_blank"
-               class="btn">
-                Installation Tutorial
-            </a>
-        </div>
+    <button onclick="copyCommand()" class="btn">
+        Copy Install Command
+    </button>
 
+    <br><br>
+
+    <a href="https://youtu.be/HHKrT1E12FU"
+       target="_blank"
+       class="btn">
+       Watch Tutorial
+    </a>
+</div>
         <div class="card">
             <h3>🌍 Community</h3>
             <p>
@@ -260,11 +264,22 @@
     </a>
 
 </section>
-
+    
 <footer>
     TerraMod © 2026<br>
-    Created by Poxx
+    Created by Alejandro
 </footer>
 
+<script>
+function copyCommand() {
+  navigator.clipboard.writeText(
+    "powershell -Command \"Invoke-WebRequest 'https://raw.githubusercontent.com/p0xxxx/terramod/main/TerraMod-fabric-1.0.0.jar' -OutFile '$env:USERPROFILE\\.lunarclient\\profiles\\lunar\\1.21\\mods\\fabric-1.21.11\\TerraMod-fabric-1.0.0.jar'\""
+  );
+
+  alert("Install command copied to clipboard!");
+}
+</script>
+
 </body>
+</html>
 </html>
