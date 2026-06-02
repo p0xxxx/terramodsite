@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraMod</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Montserrat',sans-serif;
+        }
+
+        body{
+            background:#0b0f14;
+            color:white;
+            overflow-x:hidden;
+        }
+
+        .hero{
+            height:100vh;
+            background:
+                    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+                    url('https://images.unsplash.com/photo-1511497584788-876760111969');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+        }
+
+        .hero-content h1{
+            font-size:6rem;
+            font-weight:900;
+            color:#43d66c;
+            text-shadow:0 0 25px #43d66c;
+        }
+
+        .hero-content p{
+            margin-top:20px;
+            font-size:1.4rem;
+            max-width:800px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:35px;
+            padding:15px 40px;
+            background:#43d66c;
+            color:white;
+            text-decoration:none;
+            border-radius:12px;
+            font-weight:700;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 0 25px #43d66c;
+        }
+
+        section{
+            padding:100px 10%;
+        }
+
+        .title{
+            text-align:center;
+            margin-bottom:60px;
+        }
+
+        .title h2{
+            font-size:3rem;
+            color:#43d66c;
+        }
+
+        .features{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:30px;
+        }
+
+        .card{
+            background:#131a22;
+            border:1px solid #1d2835;
+            border-radius:20px;
+            padding:30px;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            border-color:#43d66c;
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#43d66c;
+        }
+
+        .download{
+            text-align:center;
+            background:#131a22;
+        }
+
+        .download h2{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#999;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <h1>TERRAMOD</h1>
+
+        <p>
+            TerraMod is a world-generation overhaul for Minecraft that introduces
+            massive mountain ranges, floating islands, stunning valleys, rivers,
+            and immersive landscapes designed to make exploration feel truly epic.
+        </p>
+
+        <a href="https://raw.githubusercontent.com/p0xxxx/terramod/main/void-fabric-1.0.0.jar"
+           class="btn">
+            Download Mod
+        </a>
+
+    </div>
+</section>
+
+<section>
+
+    <div class="title">
+        <h2>Features</h2>
+    </div>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>⛰ Massive Mountains</h3>
+            <p>
+                Explore towering peaks and breathtaking terrain unlike vanilla Minecraft.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌲 Enhanced Biomes</h3>
+            <p>
+                Beautiful forests, valleys, rivers, and immersive natural landscapes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏝 Floating Islands</h3>
+            <p>
+                Discover mysterious islands suspended high above the clouds.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🗺 Endless Adventure</h3>
+            <p>
+                Every world feels unique with improved procedural generation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="title">
+        <h2>About TerraMod</h2>
+    </div>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>👨‍💻 Creator</h3>
+            <p>
+                TerraMod was created by Poxx with the goal of transforming
+                Minecraft world generation into a more immersive and breathtaking experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📩 Contact</h3>
+            <p>
+                Discord: Coming Soon<br>
+                GitHub: github.com/p0xxxx/terramod
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🎥 Installation Guide</h3>
+            <p>
+                Learn how to install TerraMod in just a few minutes.
+            </p>
+
+            <a href="https://youtu.be/HHKrT1E12FU"
+               target="_blank"
+               class="btn">
+                Installation Tutorial
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Community</h3>
+            <p>
+                Join our community to receive updates, report bugs,
+                suggest features and help shape the future of TerraMod.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="download">
+
+    <h2>Download TerraMod</h2>
+
+    <p>
+        Download TerraMod today and transform your Minecraft world.
+    </p>
+
+    <a href="https://raw.githubusercontent.com/p0xxxx/terramod/main/void-fabric-1.0.0.jar"
+       class="btn">
+        Get TerraMod
+    </a>
+
+</section>
+
+<footer>
+    TerraMod © 2026<br>
+    Created by Alejandro
+</footer>
+
+</body>
+</html>
